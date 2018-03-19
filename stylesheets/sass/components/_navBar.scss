@@ -1,0 +1,66 @@
+//nav bar sass partial thingy maaa bah
+
+// placeholders
+
+%navBarList{
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li{
+      margin: 0px 15px 0px 30px;
+      text-transform: uppercase;
+      font-size: .88em;
+      letter-spacing: 0.09em;
+      color: #595959;
+      cursor: pointer;
+      // font-weight: ;
+    }
+  }
+}
+
+// IDS BRO
+
+#navBar{
+  height: 66px;
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  box-sizing: border-box; //YAY ITS RESPONSIVE
+  border-bottom: 1px solid #E5E5E5;
+
+
+#navBarLeft{
+  height: 100%;
+  width: auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  #navBarLogo{
+    height: 100%;
+    width: auto;
+
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+  }
+  @extend %navBarList;
+  li:first-child{
+    margin: 0 0 0 30px;
+  }
+}
+
+#navBarRight{
+  height: 100%;
+  width: auto;
+
+  display: flex;
+}
+
+@extend %navBarList;
+}

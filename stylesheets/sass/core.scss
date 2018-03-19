@@ -2,6 +2,7 @@
 
 @import 'components/reset';
 @import 'components/fontfaces';
+@import 'components/navBar';
 
 //master conrtrols
 
@@ -12,13 +13,7 @@ body {
   //RESPONSIVE FONT SIZE
   font-size: 100%;
   font-family: 'Avenir Next', sans-serif;
-  background-color: #EEEEEC;
-  font-weight: 300;
-
-}
-
-//classes
-
-#navBar{
+  background-color: #CFEDE5;
+  font-weight: 150;
 
 }
