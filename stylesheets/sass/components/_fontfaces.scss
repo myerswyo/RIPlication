@@ -3,26 +3,26 @@
 @font-face {
     font-family: 'Avenir Next';
     src: local('Avenir Next Bold'), local('AvenirNext-Bold'),
-        url('AvenirNext-Bold.woff2') format('woff2'),
-        url('AvenirNext-Bold.woff') format('woff');
-    font-weight: bold;
+        url('fonts/AvenirNext-Bold.woff2') format('woff2'),
+        url('fonts/AvenirNext-Bold.woff') format('woff');
+    font-weight: 700; // this is the "bold" version of this font
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Avenir Next';
     src: local('Avenir Next Regular'), local('AvenirNext-Regular'),
-        url('AvenirNext-Regular.woff2') format('woff2'),
-        url('AvenirNext-Regular.woff') format('woff');
-    font-weight: normal; //font weight 300
+        url('fonts/AvenirNext-Regular.woff2') format('woff2'),
+        url('fonts/AvenirNext-Regular.woff') format('woff');
+    font-weight: 300; //font weight 300 is "normal"
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Avenir Next';
     src: local('Avenir Next Medium'), local('AvenirNext-Medium'),
-        url('AvenirNext-Medium.woff2') format('woff2'),
-        url('AvenirNext-Medium.woff') format('woff');
+        url('fonts/AvenirNext-Medium.woff2') format('woff2'),
+        url('fonts/AvenirNext-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
