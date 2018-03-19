@@ -1,12 +1,18 @@
 //importred partials
 
 @import 'components/reset';
+@import 'components/fontfaces';
 
 //master conrtrols
 
 
 body {
-  height: vh;
-  width: vw;
-  font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+  //RESPONSIVE FONT SIZE
+  font-size: 100%;
+  font-family: 'Avenir Next', sans-serif;
+  background-color: #EEEEEC;
+  font-weight: 300;
+
 }
