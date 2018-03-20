@@ -9,14 +9,24 @@
     align-items: center;
 
     li{
-      margin: 0px 15px 0px 30px;
+      margin: 0px 14px;
+      padding-bottom: 1px;
       text-transform: uppercase;
       font-size: .88em;
       letter-spacing: 0.09em;
       color: #595959;
       cursor: pointer;
+      &:hover{
+        color: #1BA3DE;
+      }
       // font-weight: ;
     }
+  }
+}
+
+%navHover{
+  &:hover{
+    color: #1BA3DE;
   }
 }
 
@@ -40,6 +50,9 @@
   display: flex;
   justify-content: space-between;
 
+
+
+
   #navBarLogo{
     height: 100%;
     width: auto;
@@ -50,8 +63,12 @@
 
   }
   @extend %navBarList;
+
+  // manipulate the first child of the parent
+
   li:first-child{
-    margin: 0 0 0 30px;
+    margin: 0 15px 0 30px;
+
   }
 }
 
@@ -60,7 +77,29 @@
   width: auto;
 
   display: flex;
-}
+  @extend %navBarList;
+  margin-right: 15px;
 
-@extend %navBarList;
+    li:first-child{
+      color: #1BA3DE;
+    }
+
+
+    li:last-child{
+      margin: 0 0 2px 5px;
+
+    }
+    li:nth-child(2){
+      color:red;
+      margin-right: 0px;
+
+    }
+
+    li:nth-child(3){
+      &:hover{
+        // change svg colors
+        fill: #4182C4;
+      }
+    }
+  }
 }

@@ -65,17 +65,20 @@ table {
   font-weight: 500;
   font-style: normal; }
 
-#navBar #navBarLeft ul, #navBar ul {
+#navBar #navBarLeft ul, #navBar #navBarRight ul {
   display: flex;
   justify-content: space-around;
   align-items: center; }
-  #navBar #navBarLeft ul li, #navBar ul li {
-    margin: 0px 15px 0px 30px;
+  #navBar #navBarLeft ul li, #navBar #navBarRight ul li {
+    margin: 0px 14px;
+    padding-bottom: 1px;
     text-transform: uppercase;
     font-size: .88em;
     letter-spacing: 0.09em;
     color: #595959;
     cursor: pointer; }
+    #navBar #navBarLeft ul li:hover, #navBar #navBarRight ul li:hover {
+      color: #1BA3DE; }
 
 #navBar {
   height: 66px;
@@ -97,16 +100,26 @@ table {
       align-items: center;
       cursor: pointer; }
     #navBar #navBarLeft li:first-child {
-      margin: 0 0 0 30px; }
+      margin: 0 15px 0 30px; }
   #navBar #navBarRight {
     height: 100%;
     width: auto;
-    display: flex; }
+    display: flex;
+    margin-right: 15px; }
+    #navBar #navBarRight li:first-child {
+      color: #1BA3DE; }
+    #navBar #navBarRight li:last-child {
+      margin: 0 0 2px 5px; }
+    #navBar #navBarRight li:nth-child(2) {
+      color: red;
+      margin-right: 0px; }
+    #navBar #navBarRight li:nth-child(3):hover {
+      fill: #4182C4; }
 
 body {
   height: 100vh;
   width: 100vw;
   font-size: 100%;
   font-family: 'Avenir Next', sans-serif;
-  background-color: #CFEDE5;
+  background-color: #FCFCFC;
   font-weight: 150; }
