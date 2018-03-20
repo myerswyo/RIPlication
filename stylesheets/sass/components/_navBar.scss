@@ -1,0 +1,195 @@
+//nav bar sass partial thingy maaa bah
+
+//VARIABLESSS
+
+$navBarHeight: 75px;
+$borderStuff: 1px solid black;
+
+//high level element
+
+hr{
+  width: 100%;
+  border-top: 1px solid #E3E3E3;
+  border-bottom: none;
+}
+
+// placeholders
+
+%navBarBorderStyle{
+  border-bottom: 1px solid black;
+}
+
+%navBarList{
+  ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    li{
+      display: flex;
+      align-items: center;
+      height: 100%;
+      margin: 0px 0px 0px 14px;
+      padding-bottom: 1px;
+      text-transform: uppercase;
+      font-size: .88em;
+      letter-spacing: 0.09em;
+      color: #595959;
+      // position: fi;
+      cursor: pointer;
+      position: relative;
+      box-sizing: border-box;
+      &:hover{
+        color: #1BA3DE;
+      }
+      // font-weight: ;
+    }
+  }
+}
+
+%navHover{
+  &:hover{
+    color: #1BA3DE;
+  }
+}
+
+// IDS BRO
+
+#navBar{
+  height: $navBarHeight;
+  width: 100vw;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  box-sizing: border-box; //YAY ITS RESPONSIVE
+  @extend %navBarBorderStyle;
+
+
+#navBarLeft{
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+
+
+
+
+  #navBarLogo{
+    height: 100%;
+    width: auto;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+  }
+  @extend %navBarList;
+
+  // manipulate the first child of the parent
+ul{
+  li{
+    // padding: 0px 15px;
+    ul{
+
+      li{
+        margin: 10px 0px;
+        letter-spacing: -.025;
+        text-transform: capitalize;
+        font-size: 1.1em;
+        // padding-left:x;
+
+      }
+    }
+  }
+}
+  li{
+    margin: 0 15px 0 30px;
+      &:hover{
+      .dd{
+        display: block;
+      }
+    }
+
+  }
+}
+
+#navBarRight{
+  height: 100%;
+  width: auto;
+
+  display: flex;
+  @extend %navBarList;
+  margin-right: 15px;
+
+    li:first-child{
+      color: #1BA3DE;
+
+    }
+
+
+    li:last-child{
+      margin: 0 0 2px 5px;
+
+    }
+    li:nth-child(2){
+      color:red;
+      margin-right: 0px;
+
+    }
+
+    li:nth-child(3){
+      &:hover{
+        fill: #4182C4;
+      }
+    }
+  }
+}
+
+#hero{
+  width: 100vw;
+  height: 680px;
+  background-color: white;
+}
+
+// DROP DOWN CODE class
+
+.dd{
+  height: auto;
+  width: auto;
+  // WEEEEEEE ITS GONE
+  display: none;
+  padding: 20px 30px;
+  background-color: lightgray;
+  position: absolute;
+  top: $navBarHeight;
+  border-bottom: $borderStuff;
+  border-left: $borderStuff;
+  border-right: $borderStuff;
+
+
+
+  &:hover{
+    cursor: default;
+  }
+
+  ul{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    // padding: 0 0 10px 10px;
+    // flex-flow: wrap;
+
+    li{
+      width: 100%;
+      height: auto;
+      margin: 0px;
+
+      // padding: 10px;
+    }
+
+  }
+  // left: 270px;
+  // opacity: 50%;
+}

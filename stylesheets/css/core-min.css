@@ -65,10 +65,109 @@ table {
   font-weight: 500;
   font-style: normal; }
 
+hr {
+  width: 100%;
+  border-top: 1px solid #E3E3E3;
+  border-bottom: none; }
+
+#navBar {
+  border-bottom: 1px solid black; }
+
+#navBar #navBarLeft ul, #navBar #navBarRight ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  #navBar #navBarLeft ul li, #navBar #navBarRight ul li {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0px 0px 0px 14px;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+    font-size: .88em;
+    letter-spacing: 0.09em;
+    color: #595959;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box; }
+    #navBar #navBarLeft ul li:hover, #navBar #navBarRight ul li:hover {
+      color: #1BA3DE; }
+
+#navBar {
+  height: 75px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px;
+  box-sizing: border-box; }
+  #navBar #navBarLeft {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: space-between; }
+    #navBar #navBarLeft #navBarLogo {
+      height: 100%;
+      width: auto;
+      margin-right: 15px;
+      display: flex;
+      align-items: center;
+      cursor: pointer; }
+    #navBar #navBarLeft ul li ul li {
+      margin: 10px 0px;
+      letter-spacing: -.025;
+      text-transform: capitalize;
+      font-size: 1.1em; }
+    #navBar #navBarLeft li {
+      margin: 0 15px 0 30px; }
+      #navBar #navBarLeft li:hover .dd {
+        display: block; }
+  #navBar #navBarRight {
+    height: 100%;
+    width: auto;
+    display: flex;
+    margin-right: 15px; }
+    #navBar #navBarRight li:first-child {
+      color: #1BA3DE; }
+    #navBar #navBarRight li:last-child {
+      margin: 0 0 2px 5px; }
+    #navBar #navBarRight li:nth-child(2) {
+      color: red;
+      margin-right: 0px; }
+    #navBar #navBarRight li:nth-child(3):hover {
+      fill: #4182C4; }
+
+#hero {
+  width: 100vw;
+  height: 680px;
+  background-color: white; }
+
+.dd {
+  height: auto;
+  width: auto;
+  display: none;
+  padding: 20px 30px;
+  background-color: lightgray;
+  position: absolute;
+  top: 75px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black; }
+  .dd:hover {
+    cursor: default; }
+  .dd ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; }
+    .dd ul li {
+      width: 100%;
+      height: auto;
+      margin: 0px; }
+
 body {
   height: 100vh;
   width: 100vw;
   font-size: 100%;
   font-family: 'Avenir Next', sans-serif;
-  background-color: #EEEEEC;
-  font-weight: 300; }
+  background-color: #FCFCFC;
+  font-weight: 150; }
