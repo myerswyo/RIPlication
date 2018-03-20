@@ -65,6 +65,21 @@ table {
   font-weight: 500;
   font-style: normal; }
 
+h1 {
+  font-size: 3.15em;
+  letter-spacing: .2px;
+  line-height: 1.25;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 10px 0px; }
+
+.smallCapsHeader {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0px 0px 30px 30px;
+  margin: 0px; }
+
 hr {
   width: 100%;
   border-top: 1px solid #E3E3E3;
@@ -164,6 +179,20 @@ hr {
       height: auto;
       margin: 0px; }
 
+#jumbotron {
+  width: 100vw;
+  height: 550px;
+  background: url("../imgs/bluebottle.webp");
+  background-size: cover;
+  background-position: 0px -85px; }
+
+#jumbotronContent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
+
 body {
   height: 100vh;
   width: 100vw;
@@ -171,3 +200,26 @@ body {
   font-family: 'Avenir Next', sans-serif;
   background-color: #FCFCFC;
   font-weight: 150; }
+
+.contentWrapper {
+  width: 960px;
+  margin: 0 auto; }
+
+.CTAbutton {
+  height: 44px;
+  width: 104.008667389px;
+  background-color: #4182C4;
+  padding: 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.95);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .89em;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 1s; }
+  .CTAbutton:hover {
+    color: #1589CA;
+    transition: 1s; }

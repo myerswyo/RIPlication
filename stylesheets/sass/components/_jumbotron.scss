@@ -1,0 +1,19 @@
+// SASS CODE
+
+//IDS
+
+#jumbotron{
+  width: 100vw;
+  height: 550px;
+  background: url('../imgs/bluebottle.webp');
+  background-size: cover;
+  background-position: 0px -85px;
+}
+
+#jumbotronContent{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}

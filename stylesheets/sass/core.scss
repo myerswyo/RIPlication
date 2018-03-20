@@ -2,7 +2,13 @@
 
 @import 'components/reset';
 @import 'components/fontfaces';
+@import 'components/typestyles';
 @import 'components/navBar';
+@import 'components/jumbotron';
+
+//VARIABLESSS
+
+$width: 960px;
 
 //master conrtrols
 
@@ -16,4 +22,38 @@ body {
   background-color: #FCFCFC;
   font-weight: 150;
 
+}
+
+// super duper classes
+
+.contentWrapper{
+  width: $width;
+  margin: 0 auto;
+}
+
+// super buttons
+
+.CTAbutton{
+  // smallest height one can use for mobile
+  height: 44px;
+  width: $width / 9.23;
+  background-color: #4182C4;
+  padding: 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255, .95);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .89em;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 1s;
+
+
+    &:hover{
+      // background-color: dark(blue, 10%);
+      color: #1589CA;
+      transition: 1s;
+    }
 }
