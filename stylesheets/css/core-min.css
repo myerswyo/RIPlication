@@ -117,9 +117,9 @@ hr {
       letter-spacing: -.025;
       text-transform: capitalize;
       font-size: 1.1em; }
-    #navBar #navBarLeft li:first-child {
+    #navBar #navBarLeft li {
       margin: 0 15px 0 30px; }
-      #navBar #navBarLeft li:first-child:hover .dd {
+      #navBar #navBarLeft li:hover .dd {
         display: block; }
   #navBar #navBarRight {
     height: 100%;

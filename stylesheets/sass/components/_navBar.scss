@@ -103,10 +103,9 @@ ul{
     }
   }
 }
-  li:first-child{
+  li{
     margin: 0 15px 0 30px;
-
-    &:hover{
+      &:hover{
       .dd{
         display: block;
       }
